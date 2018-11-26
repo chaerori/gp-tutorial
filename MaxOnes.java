@@ -23,9 +23,9 @@ public class MaxOnes extends Problem implements SimpleProblemForm
         if (!(individual2.fitness instanceof SimpleFitness))
             state.output.fatal("It's not a SimpleFitness!", null);
         ((SimpleFitness)individual2.fitness).setFitness(state,
-                /// fitness
+                // fitness
                 sum / (double)individual2.genome.length,
-                /// is the individual ideal?  Indicate here
+                // is the individual ideal?  Indicate here
                 sum == individual2.genome.length);
         individual2.evaluated = true;
     }
